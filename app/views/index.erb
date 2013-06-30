@@ -1,0 +1,27 @@
+<% if @user == false %>
+Log in unsuccessful. Is caps lock on?
+<% end %>
+ 
+
+  <div id="login_form">
+	<h3> Sign up here:</h3>
+
+	<form action='/users' method='post'>
+	  <input id="text_input" type="text" name="user[username]" placeholder="Username" required>
+	  <input id="text_input" type="password" name="user[password]" placeholder="Password" required>
+	  <div class="login_button">
+	  <input type="submit" value="Sign Up">
+	   </div>
+	</form>
+	<h3> Log in here: </h3>
+	<form action='/sessions' method='post'>
+	  <input id="text_input" type="text" name="user[username]" placeholder="Username" required>
+	  <input id="text_input" type="password" name="user[password]" placeholder="Password" required>
+	  
+	   <div class="login_button">
+	  <input type="submit" value="Log In">
+	    </div>
+	  
+	</form>
+</div>
+

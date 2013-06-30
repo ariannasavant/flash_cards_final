@@ -1,0 +1,10 @@
+<h2 id="welcome_user">Welcome, <%= @user.username %>!</h2>
+<div id="dren_decks"></div>
+<div class="decks">
+  <h2> Games <h2>
+	<ul>
+	  <% @decks.each do |deck| %>
+	  <li><a href="/rounds?deck_id=<%= deck.id %>"><%=deck.name%></a></li>
+	  <% end %>
+	</ul>
+</div>
