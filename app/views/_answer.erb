@@ -1,5 +1,5 @@
 <% if @correct %>
-  <h2>You're Correct! The answer is <%=@card.answer%>.</h2>
+  <h2 id="guess_h2" style="color: #E0E0E0">You're Correct! The answer is <%=@card.answer%>.</h2>
 <% else %>
-  <h2> The correct answer is <%=@card.answer%>.</h2>
+  <h2 id="guess_h2" style="color: #E0E0E0"> The correct answer is <%=@card.answer%>.</h2>
 <% end %>
