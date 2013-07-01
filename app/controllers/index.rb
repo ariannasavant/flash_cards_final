@@ -28,6 +28,9 @@ end
 
 get '/users/:id' do
 	@user = User.find(params[:id])
-	@rounds = @user.rounds
+	@latest_stats = { 	current_score: current_average(@user), 
+											average_score: all_averages(@user), 
+											deck: Deck.find(@user.rounds.last.deck_id).name
+									}
 	erb :user
 end
