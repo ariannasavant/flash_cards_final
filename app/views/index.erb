@@ -1,27 +1,44 @@
 <% if @user == false %>
 Log in unsuccessful. Is caps lock on?
 <% end %>
- 
 
-  <div id="login_form">
-	<h3> Sign up here:</h3>
+<html>
 
-	<form action='/users' method='post'>
-	  <input id="text_input" type="text" name="user[username]" placeholder="Username" required>
-	  <input id="text_input" type="password" name="user[password]" placeholder="Password" required>
-	  <div class="login_button">
-	  <input type="submit" value="Sign Up">
-	   </div>
-	</form>
-	<h3> Log in here: </h3>
-	<form action='/sessions' method='post'>
-	  <input id="text_input" type="text" name="user[username]" placeholder="Username" required>
-	  <input id="text_input" type="password" name="user[password]" placeholder="Password" required>
-	  
-	   <div class="login_button">
-	  <input type="submit" value="Log In">
-	    </div>
-	  
-	</form>
+
+
+
+<div class="buttons">
+        <button id="sign-up" class="btn btn-large btn-primary">Log In</button>
+        <button id="sign-in" class="btn btn-large btn-success">Sign Up</button>
+    </div>
+    
+<div class="container">
+    
+    
+    <form id="login_user" action="/sessions" method='post'>
+    <h2>Log In</h2>
+    <label>Email Address</label>
+    <input id="text_input" type="text" class="span3" name="user[username]" placeholder="Username" required>
+    <label>Password</label>
+    <input id="text_input" type="password" class="span3" name="user[password]" placeholder="Password" required>
+    <input type="submit" value="Log In" class="btn btn-primary pull-right">
+    <div class="clearfix"></div>
+    </form>
+
+    <form id="sign_up_user" action="/users" method="post">
+    <h2>Sign Up</h2>
+    <label>Email Address</label>
+    <input id="text_input" type="text" class="span3" name="user[username]" placeholder="Username" required>
+    <label>Password</label>
+    <input id="text_input" type="password" class="span3" name="user[password]" placeholder="Password" required>
+    <label><input type="checkbox" checked="yes" name="terms"> I agree with<a href="#" style="color: #780000"> Opertion PRISM</a>.</label>
+    <input type="submit" value="Sign Up" class="btn btn-primary pull-right">
+    <div class="clearfix"></div>
+    </form>
 </div>
+</body>
+</html>
+
+
+
 

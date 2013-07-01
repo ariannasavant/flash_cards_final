@@ -1,3 +1,12 @@
-<div class="latest_stats"><%= @latest_stats[:deck] %>:  Latest score: <%= @latest_stats[:current_score] %>%</div>
 
-<div class="all-stats>"><%= @latest_stats[:deck] %>:  Average score: <%= @latest_stats[:average_score] %>%</div>
+
+<div class="container">
+<form id="stats">
+    <h2>Game Statistics</h2>
+    <label><%= @latest_stats[:deck] %></label>
+    <input id="text_input" type="text" class="span3" placeholder=<%= @latest_stats[:current_score] %>>
+    <label><%= @latest_stats[:deck] %></label>
+    <input id="text_input" type="text" class="span3" placeholder=<%= @latest_stats[:current_score] %>>
+   
+    </form>
+    </div>

@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
 <!--   <link rel="stylesheet" href="/css/home.css">
   <link rel="stylesheet" href="/css/card.css">
   <link rel="stylesheet" href="/css/stats.css">
@@ -20,18 +21,19 @@
   <script src="/js/application.js"></script>
 
   <title></title>
-</head>
+     <div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Flashcards - The Game!</a>
     <% if @user %>
-      <nav>
-        <a href="/decks">Home</a>
-        <form action='/logout' method='get'>
-          <input type="submit" value="Logout">
-        </form>
-        <form action='/users/<%= @user.id %>' method='get'>
-          <input type="submit" value="Stats">
-        </form>
-      </nav>
-      <% end %>
+    <ul class="nav">
+      <li class="active"><a href="/decks">Home</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <li><a href="/users/<%= @user.id %>">Stats</a></li>
+    </ul><% end %>
+  </div>
+</div>
+</head>
+    
  <body>
   <div id="container">
     <%= yield %>

@@ -1,14 +1,12 @@
 
 
-
-
 <h2><%= @card.question %><h2>
 
 <br />
-  <form action="/guess" method="POST">
+  <form id="question_form" action="/guess" method="POST">
     <input type="text" name="guess" placeholder="Your guess here..." required>
     <input type="hidden" name="card_id" value="<%= @card.id %>">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="btn btn-primary pull-right">
   </form>
 
 

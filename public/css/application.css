@@ -1,12 +1,112 @@
-#container {
+/*
+.container {
   margin: 20px auto;
-  width: 800px;
-  padding: 20px;
-  position: relative;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
 
+}*/
+
+
+body{ 
+  background: url(flashcard.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*.nav {
+  background: #2c2c2c !important;
+}*/
+
+.navbar-inner {
+  background-color: #707070 !important;
+  background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,0)) !important;
+  border: 1px solid rgb(0,0,0) !important;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background-color: rgb(0,0,0) !important;
+  color: #c8c8c8;
+}
+
+.navbar .brand {
+  text-shadow: none !important;
+  color: rgb(214,214,214) !important;
+}
+
+.container {
+
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-top: 2% !important;
+  margin-bottom: 10% !important;
+  *zoom: 1 !important;
+  background-color: rgba(112,112,112,0.8) !important;
+/*  opacity: 0.6;*/
+}
+
+
+input[type="submit"] {
+  width: 200px !important;
+}
+
+.pull-right {
+  float: center !important;
 }
 
 
 
+.buttons #sign-up {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.buttons #sign-in {
+  margin-top: 10%;
+}
+
+#sign_up_user {
+  display: none;
+  margin-left: 35%;
+  margin-top: 21px;
+   opacity: 1;
+}
+
+#login_user {
+  display:none;
+  margin-left: 35%;
+  margin-top: 21px;
+   opacity: 1;
+}
+
+#stats {
+
+  margin-left: 35%;
+  margin-top: 21px;
+
+}
+
+#welcome_user { 
+  text-align: center;
+  color: #E0E0E0;
+}
+
+h3 {
+ color: #000000 !important;
+}
 
 
+
+.decks {
+  margin-left: 20px;
+
+}
+
+#question_form {
+  display: none;
+  margin-left: 35%;
+  margin-top: 21px;
+   opacity: 1;
+}

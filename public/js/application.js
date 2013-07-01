@@ -49,6 +49,16 @@ $(document).ready(function() {
 
     });
   });
+
+  $("#sign-in").on("click", function() {
+    $('.container').find("#login_user").hide();
+    $('.container').find("#sign_up_user").fadeToggle();
+  });
+
+  $("#sign-up").on("click", function() {
+    $('.container').find("#sign_up_user").hide();
+    $('.container').find("#login_user").fadeToggle();
+  });
 });
 
 
